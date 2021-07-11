@@ -296,6 +296,7 @@
 
 .seccion__galeria-imagen {
   min-width: 155px;
+  min-height: 155px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
