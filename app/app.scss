@@ -1,0 +1,35 @@
+@import "header";
+@import "nav";
+@import "main";
+@import "footer";
+
+$rojo : hsl(7, 99%, 70%);
+$amarillo : hsl(51, 100%, 49%);
+$rojo : hsl(7, 99%, 70%);
+$blanco: hsl(0, 0%, 100%);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.contenedor__flex1{
+    display: none;
+    
+}
+body{
+    display: flex;
+    
+    align-items: center;
+}
+.contenedor__flex{
+    max-width: 450px;
+    background: $blanco;
+}
+
+.nav__desktop{
+    display: none;
+}
+

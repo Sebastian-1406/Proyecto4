@@ -1,0 +1,144 @@
+
+$seccion__fruta1 : hsl(167, 40%, 24%);
+$seccion__fruta2 : hsl(198, 62%, 26%);
+$seccion__titulo : hsl(212, 27%, 19%);
+$seccion__parrafo : hsl(213, 9%, 39%);
+$seccion__fruta-titulo : hsl(210, 4%, 67%);
+$seccion__personas-info-titulo : hsl(232, 10%, 55%);
+
+
+
+.seccion{
+    display: flex;
+    flex-direction: column;
+}
+.seccion__imagen{
+    width: 100%;
+    vertical-align: middle;
+}
+.seccion__texto{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+	font-family: 'Barlow', sans-serif;
+
+}
+.seccion__titulo{
+    text-align: center;
+	font-family: 'Fraunces', serif;
+    font-size: 30px;
+    width: 90%;
+    font-weight: 900;
+    color: $seccion__titulo;
+}
+.seccion__parrafo{
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: $seccion__parrafo;
+}
+
+.seccion__link{
+    display: flex;
+    justify-content: center;
+}
+.seccion__link-info{
+    text-decoration: none;
+    font-weight: 600;
+	font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.seccion__fruta{
+    position: relative;
+}
+.seccion__fruta-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;  
+    position: absolute;
+    z-index: 100;
+    bottom: 20px;
+    padding: 40px 20px;
+	font-family: 'Barlow', sans-serif;
+}
+.Graphic{
+    color: $seccion__fruta1;
+}
+.Photography{
+    color: $seccion__fruta2;
+}
+.seccion__fruta-titulo{
+    text-align: center;
+	font-family: 'Fraunces', serif;
+    font-weight: 900;
+
+}
+.seccion__fruta-parrafo{
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.seccion__personas{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 20px;
+    gap: 50px;
+}
+.seccion__personas-titulo{
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+	font-family: 'Fraunces', serif;
+    color: $seccion__fruta-titulo;
+
+}
+.seccion__personas-imagen{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.seccion__personas-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.seccion__personas-parrafo{
+	font-family: 'Barlow', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: $seccion__parrafo;
+}
+.seccion__personas-info{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.seccion__personas-info-nombre{
+	font-family: 'Fraunces', serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: $seccion__titulo;
+}
+.seccion__personas-info-titulo{
+	font-family: 'Barlow', sans-serif;
+    color: $seccion__personas-info-titulo;
+    font-weight: 300;
+}
+
+.seccion__galeria{
+    display: flex;
+    flex-wrap: wrap;
+}
+.seccion__galeria-imagen{
+    min-width: 155px;
+    flex: 1;
+}

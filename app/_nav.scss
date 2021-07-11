@@ -1,0 +1,67 @@
+$seccion__titulo : hsl(212, 27%, 19%);
+$seccion__parrafo : hsl(213, 9%, 39%);
+
+.nav__icono-hamburger{
+    cursor: pointer;
+}
+
+
+.nav__mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px  20px;
+}
+
+.nav__mobile-lista{
+    margin: 0px 17px;
+    position: absolute;
+    width: calc(100% - 40px);
+    list-style: none;
+    background: $blanco;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    display: none;
+    bottom: 90px;
+    text-align: center;
+    z-index: 100;
+}
+.nav__mobile-link{
+    text-decoration: none;
+    text-align: center;
+    color: $seccion__parrafo;
+	font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+.nav__mobile-link-modificado{
+    background: yellow;
+    border-radius: 100px;
+    padding: 13px 20px;
+    color: $seccion__titulo;
+	font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 900;
+    transition: opacity .3s;
+
+}
+.nav__mobile-link:hover{
+    opacity: .5;
+}
+
+
+
+.active .nav__mobile-lista{
+    display: flex;
+}
+
+.active .hamburger__mobile{
+    display: block;
+}
+.nav__mobile-item{
+    margin: 19px 0px;
+
+}
+

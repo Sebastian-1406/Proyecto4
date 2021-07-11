@@ -1,0 +1,28 @@
+$blanco: hsl(0, 0%, 100%);
+
+
+.header{
+    background-image: url('../images/mobile/image-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 70vh;
+	font-family: 'Fraunces', serif;    
+}
+.header__titulo{
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 35px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: $blanco;
+}
+.header__icono{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: -150px;
+    margin: auto;
+}

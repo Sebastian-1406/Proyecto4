@@ -1,0 +1,47 @@
+$footer__color: hsl(168, 34%, 41%);
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px;
+    background: rgb(144,212,197);
+    
+}
+.footer__contenido-logo{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.footer__lista{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__lista-link{
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Barlow', sans-serif;
+    color: $footer__color;
+    transition: color .4s;
+
+}
+.footer__lista-link:hover{
+    color: $blanco;
+}
+.redes__sociales{
+    margin-top: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.fab{
+    font-size: 18px;
+    color: rgb(37,86,75);
+    cursor: pointer;
+    transition: color .4s;
+}
+.fab:hover{
+    color: $blanco;
+}
