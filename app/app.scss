@@ -8,6 +8,10 @@ $amarillo : hsl(51, 100%, 49%);
 $rojo : hsl(7, 99%, 70%);
 $blanco: hsl(0, 0%, 100%);
 
+.desktop{
+    display: none;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -15,16 +19,12 @@ $blanco: hsl(0, 0%, 100%);
 
 }
 
-.contenedor__flex1{
-    display: none;
-    
-}
+
 body{
     display: flex;
     align-items: center;
 }
 .contenedor__flex{
-    max-width: 450px;
     background: $blanco;
 }
 
@@ -32,3 +32,111 @@ body{
     display: none;
 }
 
+@media screen and (min-width:600px){
+
+    .mobile{
+        display: none;
+    }
+    .contenedor__flex{
+        width: 100%;
+    }
+    .header{
+        background-image: url('../images/desktop/image-header.jpg');
+        height: 100vh;
+    }
+    .header__titulo{
+        margin-top: 55px;
+        font-size: 45px;
+    }
+    .header__icono{
+        bottom: 0px;
+    }
+
+    .nav__desktop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px;
+    }
+    .nav__desktop-lista{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav__desktop-link{
+        text-decoration: none;
+        color: $seccion__parrafo;
+        padding: 10px 30px;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    .nav__desktop-link-modificado{
+        background: #fff;
+        border-radius: 100px;
+        padding: 13px 20px;
+        color: $seccion__titulo;
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 900;
+        transition: opacity .3s;
+    }
+
+    .seccion__Transform{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+    .seccion__texto{
+        padding: 10%;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 50%;
+        min-width: 500px;
+        flex: 1;
+    
+    }
+    .seccion__imagen{
+        min-width: 400px;
+        max-width: 50%;
+        min-width: 500px;
+        flex: 1;
+    }
+
+    .seccion__titulo{
+        text-align: left;
+        font-size: 40px;
+    }
+    .seccion__parrafo{
+        text-align: left;
+    }
+    .seccion__audience{
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedor__fruta{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .seccion__fruta{
+        flex: 1;
+    }
+    .seccion__fruta-imagen{
+        max-width: 100%;
+        min-width: 500px;
+    }
+    .seccion__fruta-texto{
+        width: 50%;
+    }
+    .seccion__fruta{
+        display: inline-flex;
+        justify-content: center;
+    }
+
+
+    .seccion__personas{
+        justify-content: center;
+    }
+}
