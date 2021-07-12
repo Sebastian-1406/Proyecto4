@@ -5,7 +5,6 @@
 
 $rojo : hsl(7, 99%, 70%);
 $amarillo : hsl(51, 100%, 49%);
-$rojo : hsl(7, 99%, 70%);
 $blanco: hsl(0, 0%, 100%);
 
 .desktop{
@@ -26,14 +25,140 @@ body{
 }
 .contenedor__flex{
     background: $blanco;
+    overflow: hidden;
 }
 
 .nav__desktop{
     display: none;
 }
 
-@media screen and (min-width:600px){
 
+@media screen and (min-width:700px){
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .seccion__fruta-texto{
+        width: 50%;
+    }
+    .header{
+        background-image: url('../images/desktop/image-header.jpg');
+        height: 100vh;
+    }
+    .header__titulo{
+        margin-top: 30px;
+        font-size: 54px;
+    }
+    .header__icono{
+        bottom: 0px;
+    }
+
+    .nav__desktop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px;
+    }
+    .nav__desktop-lista{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav__desktop-link{
+        text-decoration: none;
+        color: $seccion__parrafo;
+        padding: 10px 20px;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    .nav__desktop-link-modificado{
+        background: #fff;
+        border-radius: 100px;
+        padding: 13px 15px;
+        color: $seccion__titulo;
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 900;
+        transition: opacity .3s;
+    }
+    .seccion__Transform{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+    .seccion__audience{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .seccion__texto{
+        justify-content: center;
+        padding: 30px;
+        width: 50%;
+        flex: 1;
+        align-items: flex-start;
+
+    }
+    .seccion__titulo{
+        font-size: 30px;
+        text-align: left;
+    }
+    .seccion__parrafo{
+        text-align: left;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .seccion__imagen{
+        width: 50%;   
+    }
+    .contenedor__fruta{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .seccion__fruta{
+        width: 50%;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .seccion__fruta-imagen{
+        width: 100%;
+        min-width: 400px;
+    }
+    .seccion__fruta-texto{
+        width: 100%;
+        bottom: 20px;
+    }
+    .seccion__galeria-desktop{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .seccion__galeria-imagen{
+        min-width: 150px;
+        min-height: 150px;
+    }
+    .footer{
+        justify-content: center;
+
+    }
+    .footer__lista{
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+@media screen and (min-width:1000px){
+
+    .desktop{
+        display: block;
+    }
+    
     .mobile{
         display: none;
     }
@@ -93,14 +218,13 @@ body{
         align-items: flex-start;
         justify-content: center;
         max-width: 50%;
-        min-width: 500px;
+        min-width: 400px;
         flex: 1;
     
     }
     .seccion__imagen{
-        min-width: 400px;
         max-width: 50%;
-        min-width: 500px;
+        min-width: 400px;
         flex: 1;
     }
 
@@ -114,6 +238,12 @@ body{
     .seccion__audience{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .seccion__Transform{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
     }
     .contenedor__fruta{
         display: flex;
@@ -125,7 +255,7 @@ body{
     }
     .seccion__fruta-imagen{
         max-width: 100%;
-        min-width: 500px;
+        min-width: 400px;
     }
     .seccion__fruta-texto{
         width: 50%;
@@ -134,9 +264,33 @@ body{
         display: inline-flex;
         justify-content: center;
     }
-
-
     .seccion__personas{
         justify-content: center;
+        padding: 0;
+        padding-top: 50px;
+    }
+    .seccion__galeria-desktop{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .seccion__galeria-imagen{
+        min-width: 250px;
+        min-height: 250px;
+
+    }
+    .seccion__contenedor{
+        padding: 100px 70px;
+    }
+    .seccion__personas{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer{
+        justify-content: center;
+
+    }
+    .footer__lista{
+        justify-content: center;
+        gap: 50px;
     }
 }
